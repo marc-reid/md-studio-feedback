@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Open MD Studio
+    url: https://mdstudio.dev
+    about: Use the live application.
+  - name: Report a security vulnerability privately
+    url: https://github.com/marc-reid/md-studio-feedback/security/advisories/new
+    about: Do not publish security vulnerabilities in a public issue.
