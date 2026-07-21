@@ -1,0 +1,61 @@
+name: Suggest an improvement
+description: Share an idea that would make MD Studio more useful or easier to use.
+title: "[Idea]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing an idea. It is most helpful when we understand the problem before discussing a particular solution.
+
+        This suggestion will be public. Do not include confidential documents, personal information, credentials, or other sensitive material.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the task, frustration, or missing capability.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like MD Studio to do?
+      description: Describe your preferred result. A rough idea is enough.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-workaround
+    attributes:
+      label: How do you handle this today?
+      description: Optional. Tell us about another tool or workaround you currently use.
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often would this help?
+      options:
+        - Every day
+        - A few times a week
+        - A few times a month
+        - Occasionally
+        - Not sure
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Anything else?
+      description: Add examples or screenshots only if they contain no private information.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues for a similar suggestion.
+          required: true
+        - label: I removed confidential and personal information from this suggestion.
+          required: true
